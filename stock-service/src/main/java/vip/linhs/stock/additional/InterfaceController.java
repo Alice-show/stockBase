@@ -27,39 +27,39 @@ public class InterfaceController {
         autoBuy.revoke(code);
     }
 
-    @GetMapping("/start")
+    @GetMapping("/guard/start")
     @ResponseBody
     public void startAutoBuy(){
         buyGuard.openFlag();
         sellGuard.openFlag();
     }
 
-    @GetMapping("/stop")
+    @GetMapping("/guard/stop")
     @ResponseBody
     public void stopAutoBuy(){
         buyGuard.closeFlag();
         sellGuard.closeFlag();
     }
 
-    @GetMapping("/buyStartOnly")
+    @GetMapping("/guard/buyStartOnly")
     @ResponseBody
     public void buyStartOnly(){
         buyGuard.openFlag();
     }
 
-    @GetMapping("/sellStartOnly")
+    @GetMapping("/guard/sellStartOnly")
     @ResponseBody
     public void sellStartOnly(){
         sellGuard.openFlag();
     }
 
-    @GetMapping("/buyStopOnly")
+    @GetMapping("/guard/buyStopOnly")
     @ResponseBody
     public void buyStopOnly(){
         buyGuard.closeFlag();
     }
 
-    @GetMapping("/sellStopOnly")
+    @GetMapping("/guard/sellStopOnly")
     @ResponseBody
     public void sellStopOnly(){
         sellGuard.closeFlag();

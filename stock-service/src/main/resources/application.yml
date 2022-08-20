@@ -12,6 +12,7 @@ spring:
     port: 6379
     timeout: 1000
     database: 0
+    password: casa
 
 ocr:
   service: aliyunOcrService

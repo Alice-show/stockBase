@@ -83,6 +83,7 @@ public class AutoBuy {
         request.setStockCode(stockCode);
         request.setZqmc(stockName);
         request.setTradeType(SubmitRequest.B);
+        request.setMarket(StockUtil.getStockMarket(request.getStockCode()));
 
         TradeResultVo<SubmitResponse> response = tradeApiService.submit(request);
         if (response.success()) {
