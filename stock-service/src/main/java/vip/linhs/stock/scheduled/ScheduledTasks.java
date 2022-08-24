@@ -139,7 +139,7 @@ public class ScheduledTasks {
         }
     }
 
-    @Scheduled(cron = "0 0,20,40 * ? * MON-FRI")
+//    @Scheduled(cron = "0 0,20,40 * ? * MON-FRI")
     public void heartbeat() {
         boolean isBusinessDate = holidayCalendarService.isBusinessDate(new Date());
         if (!isBusinessDate) {

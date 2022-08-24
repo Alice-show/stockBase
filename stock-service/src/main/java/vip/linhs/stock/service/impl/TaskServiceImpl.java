@@ -103,13 +103,13 @@ public class TaskServiceImpl implements TaskService {
                 runTicker();
                 break;
             case TradeTicker:
-                runTradeTicker();
+//                runTradeTicker();
                 break;
             case ApplyNewStock:
                 applyNewStock();
                 break;
             case AutoLogin:
-                autoLogin();
+//                autoLogin();
                 break;
             default:
                 break;
