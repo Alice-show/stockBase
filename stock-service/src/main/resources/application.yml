@@ -7,15 +7,18 @@ spring:
     username: hy
     password: casa
     driver-class-name: com.mysql.cj.jdbc.Driver
+
   redis:
     host: 119.29.105.157
     port: 6379
     timeout: 1000
     database: 0
     password: casa
+  cache:
+    type: caffeine
 
 ocr:
-  service: aliyunOcrService
+  service: chaojiyingOcrService
   third:
     aliyun:
       appcode:
