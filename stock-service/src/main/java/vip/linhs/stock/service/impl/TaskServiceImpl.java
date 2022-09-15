@@ -145,13 +145,13 @@ public class TaskServiceImpl implements TaskService {
                 runUpdateOfDailyIndex();
                 break;
             case Ticker:
-                runTicker();
+//                runTicker();
                 break;
             case TradeTicker:
 //                runTradeTicker();
                 break;
             case ApplyNewStock:
-                runApplyNewStock();
+//                runApplyNewStock();
                 break;
             case AutoLogin:
 //                autoLogin();

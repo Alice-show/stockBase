@@ -119,7 +119,7 @@ public class ScheduledTasks {
     /**
      * apply new stock
      */
-    @Scheduled(cron = "0 1 10,14 ? * MON-FRI")
+//    @Scheduled(cron = "0 1 10,14 ? * MON-FRI")
     public void applyNewStock() {
         if (isNotBusinessTime()) {
             return;
@@ -133,14 +133,7 @@ public class ScheduledTasks {
         }
     }
 
-    private void executeTask(List<ExecuteInfo> list) {
-        for (ExecuteInfo executeInfo : list) {
-            taskService.executeTask(executeInfo);
-        }
-    }
-
-//    @Scheduled(cron = "0 0,20,40 * ? * MON-FRI")
-    @Scheduled(cron = "0 10,30,50 8-20 ? * MON-FRI")
+//    @Scheduled(cron = "0 10,30,50 8-20 ? * MON-FRI")
     public void heartbeat() {
         if (isNotBusinessDate()) {
             return;
